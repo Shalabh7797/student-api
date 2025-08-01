@@ -1,4 +1,5 @@
 package com.student.api.controller;
+import com.student.api.dto.StudentDTO;
 
 import com.student.api.entity.Student;
 import com.student.api.service.StudentService;
@@ -8,43 +9,41 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// StudentController.java
+@SuppressWarnings("unused")
 @RestController
 @RequestMapping("/students")
 public class StudentController {
+
     @Autowired
     private StudentService studentService;
 
-    // Create a Student
     @PostMapping
-    public Student createStudent(@RequestBody @Valid Student student) {
-        return studentService.saveStudent(student);
+    public StudentDTO createStudent(@RequestBody @Valid StudentDTO studentDTO) {
+        return studentService.saveStudent(studentDTO);
     }
 
-    // Get all Students
     @GetMapping
-    public List<Student> getAllStudents() {
+    public List<StudentDTO> getAllStudents() {
         return studentService.getAllStudents();
     }
 
-    // Get Student by ID
     @GetMapping("/{id}")
-    public Student getStudentById(@PathVariable Long id) {
+    public StudentDTO getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
     }
 
-    // Update Student
     @PutMapping("/{id}")
-    public Student updateStudent(@PathVariable Long id, @Valid @RequestBody Student student) {
-        return studentService.updateStudent(id, student);
+    public StudentDTO updateStudent(@PathVariable Long id, @Valid @RequestBody StudentDTO studentDTO) {
+        return studentService.updateStudent(id, studentDTO);
     }
 
-    // Delete Student
     @DeleteMapping("/{id}")
     public void deleteStudent(@PathVariable Long id) {
         studentService.deleteStudent(id);
     }
 }
-    
+
 
 
 

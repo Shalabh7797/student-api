@@ -1,13 +1,15 @@
 package com.student.api.service;
 
-import com.student.api.entity.Student;
+import com.student.api.dto.StudentDTO;
+
 
 import java.util.List;
 
 public interface StudentService {
-    Student saveStudent(Student student);
-    List<Student> getAllStudents();
-    Student getStudentById(Long id);
-    Student updateStudent(Long id, Student student);
+    StudentDTO saveStudent(StudentDTO studentDTO);
+    List<StudentDTO> getAllStudents();
+    StudentDTO getStudentById(Long id);
+    StudentDTO updateStudent(Long id, StudentDTO studentDTO);
     void deleteStudent(Long id);
+    
 }
