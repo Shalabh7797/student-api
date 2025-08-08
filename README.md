@@ -34,4 +34,5 @@ Delete student
 
 Error handling (404, validation, etc.)
 
-Clean code with layered architecture (Controller → Service → Repository)
+Clean code with layered architecture (Controller → Service → Repository)  // UNCOMMENTED SWAGGER UI TO TEST AND BILDS AND TO LEARN DEBUG WITHOUT FRONTEND SOON EVERYTHING WILL BE ADDED WITH VALID JAVADOC AS WELL 8/8/25//
+
