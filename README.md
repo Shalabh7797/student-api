@@ -1,4 +1,7 @@
-# Student API - Deliverable (Interview-ready)
+# Student API - tested with H2 and it's console 
+
+##16/08/2025 -- working on junit testing 
+update frontend till 25/08/2025
 
 This is a complete Spring Boot backend for Student CRUD with DTOs, validation, CORS, Swagger, and Docker support.
 
