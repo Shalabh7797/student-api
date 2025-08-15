@@ -1,37 +1,21 @@
-# student-api //(Still in Progress())
-A simple Student CRUD API using Java, Spring Boot, and MySQL.
-Student Management REST API using Spring Boot
+# Student API - Deliverable (Interview-ready)
 
-A simple CRUD-based Student Management backend using Spring Boot, Hibernate, MySQL, Lombok, and Postman for testing.
+This is a complete Spring Boot backend for Student CRUD with DTOs, validation, CORS, Swagger, and Docker support.
 
-🔧 Tech Stack:
-Java
+## Quick start (local)
+1. Ensure Java 17 and Maven are installed.
+2. Create MySQL database `studentdb` (or update application-dev.yml).
+3. From project root:
+   ```bash
+   mvn clean package
+   java -jar target/student-api-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
+   ```
+4. Swagger UI: http://localhost:8080/swagger-ui/index.html
+API base path: http://localhost:8080/api/students
 
-Spring Boot
+## Quick start (Docker)
+```bash
+docker compose up --build
+```
 
-Spring Data JPA
-
-MySQL
-
-Hibernate
-
-Lombok
-
-Jakarta Validation API
-
-Postman
-
-📦 Features:
-Create a student with validation (name, email, course)
-
-Fetch all students
-
-Fetch student by ID
-
-Update student
-
-Delete student
-
-Error handling (404, validation, etc.)
-
-Clean code with layered architecture (Controller → Service → Repository)
+If you want me to push this to your GitHub or create a polished React frontend that connects to this API, tell me which and I will create the exact git commands or the React project next.
