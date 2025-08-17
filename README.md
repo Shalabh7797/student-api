@@ -16,7 +16,6 @@ This is a complete Spring Boot backend for Student CRUD with DTOs, validation, C
    ```
 
 ## still not done working on it 
-my focus is on learning details not on project and how can i make other changes through using more interfaces and how can i buikd our own interfaces and what not  
-4. Swagger UI: http://localhost:8080/swagger-ui/index.html
+1. 
 API base path: http://localhost:8080/api/students
 
