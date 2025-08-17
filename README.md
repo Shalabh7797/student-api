@@ -20,9 +20,3 @@ my focus is on learning details not on project and how can i make other changes 
 4. Swagger UI: http://localhost:8080/swagger-ui/index.html
 API base path: http://localhost:8080/api/students
 
-## Quick start (Docker)
-```bash
-docker compose up --build
-```
-
-If you want me to push this to your GitHub or create a polished React frontend that connects to this API, tell me which and I will create the exact git commands or the React project next.
